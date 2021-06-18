@@ -16,6 +16,8 @@ Contains all the necessary Kubernetes resources in order to be deployed on a loc
 
 ## Deployment
 
+```mvn clean package```
+
 **local**
 * on port 8080
 
@@ -28,3 +30,6 @@ Contains all the necessary Kubernetes resources in order to be deployed on a loc
 **minikube**
 
 ```skaffold run```
+
+This will start 3 service instances. In order to grab the service ip:port use ```minikube service --url hazelcast-starter```
+
